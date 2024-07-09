@@ -1,0 +1,23 @@
+<menu>
+        <item>
+                <name>Item 1</name>
+                <url>/item1</url>
+                <!--<image_prefix>item1</image_prefix>-->
+                <menu>
+                   <item>
+                      <name>Sub Item 1</name>
+                      <url>/item1/sub1.html</url>
+                   </item>
+                   <item>
+                      <name>Sub Item 2</name>
+                      <url>/item1/sub2.html</url>
+                   </item>
+                 </menu>
+
+        </item>
+        <item>
+                <name>Item 2</name>
+                <url>/item2</url>
+        </item>
+  
+</menu>

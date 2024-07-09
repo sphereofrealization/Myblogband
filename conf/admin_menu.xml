@@ -1,0 +1,27 @@
+<menu>
+        <item>	
+		<name>Recent Activity</name>
+	        <url>/admin</url>
+        </item>
+	<item>
+                <name>Registrants</name>
+                <url>/admin?mode=registrants</url>
+        </item>
+
+        <item>
+                <name>Musicians</name>
+                <url>/admin?mode=musicians</url>
+        </item>
+        <item>
+                <name>Bands</name>
+                <url>/admin?mode=bands</url>
+        </item>
+	<item>
+                <name>Tracks</name>
+                <url>/admin?mode=tracks</url>
+        </item>
+        <item>
+                <name>Comments</name>
+                <url>/admin?mode=comments</url>
+        </item>
+</menu>
