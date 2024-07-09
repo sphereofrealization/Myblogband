@@ -1,0 +1,225 @@
+# fields for musicians
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	first_name => $q->textfield(-name=>'first_name', -size=>12, -maxlength=>50),
+	last_name => $q->textfield(-name=>'last_name', -size=>12, -maxlength=>50),
+	address => $q->textfield(-name=>'address', -size=>12, -maxlength=>50),
+	address_2 => $q->textfield(-name=>'address_2', -size=>12, -maxlength=>50),
+	city => $q->textfield(-name=>'city', -size=>12, -maxlength=>50),
+	state => $q->textfield(-name=>'state', -size=>12, -maxlength=>50),
+	zip => $q->textfield(-name=>'zip', -size=>12, -maxlength=>50),
+	country => $q->textfield(-name=>'country', -size=>12, -maxlength=>50),
+	phone => $q->textfield(-name=>'phone', -size=>12, -maxlength=>50),
+	date_of_birth => $q->textfield(-name=>'date_of_birth', -size=>12, -maxlength=>50),
+	email => $q->textfield(-name=>'email', -size=>12, -maxlength=>50),
+	background => $q->textfield(-name=>'background', -size=>12, -maxlength=>50),
+	influences => $q->textfield(-name=>'influences', -size=>12, -maxlength=>50),
+	gear => $q->textfield(-name=>'gear', -size=>12, -maxlength=>50),
+	instrument_1 => $q->textfield(-name=>'instrument_1', -size=>12, -maxlength=>50),
+	instrument_2 => $q->textfield(-name=>'instrument_2', -size=>12, -maxlength=>50),
+	instrument_3 => $q->textfield(-name=>'instrument_3', -size=>12, -maxlength=>50),
+	instrument_4 => $q->textfield(-name=>'instrument_4', -size=>12, -maxlength=>50),
+	featured => $q->textfield(-name=>'featured', -size=>12, -maxlength=>50),
+	instrument_1_years_played => $q->textfield(-name=>'instrument_1_years_played', -size=>12, -maxlength=>50),
+	instrument_2_years_played => $q->textfield(-name=>'instrument_2_years_played', -size=>12, -maxlength=>50),
+	instrument_3_years_played => $q->textfield(-name=>'instrument_3_years_played', -size=>12, -maxlength=>50),
+	instrument_4_years_played => $q->textfield(-name=>'instrument_4_years_played', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	last_update => $q->textfield(-name=>'last_update', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for instruments
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	name => $q->textfield(-name=>'name', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for musician_tracks
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	title => $q->textfield(-name=>'title', -size=>12, -maxlength=>50),
+	notes => $q->textfield(-name=>'notes', -size=>12, -maxlength=>50),
+	filename => $q->textfield(-name=>'filename', -size=>12, -maxlength=>50),
+	post_date => $q->textfield(-name=>'post_date', -size=>12, -maxlength=>50),
+	num_plays => $q->textfield(-name=>'num_plays', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for musician_images
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	filename => $q->textfield(-name=>'filename', -size=>12, -maxlength=>50),
+	order_by => $q->textfield(-name=>'order_by', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for bands
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	name => $q->textfield(-name=>'name', -size=>12, -maxlength=>50),
+	description => $q->textfield(-name=>'description', -size=>12, -maxlength=>50),
+	influences => $q->textfield(-name=>'influences', -size=>12, -maxlength=>50),
+	memorable_shows => $q->textfield(-name=>'memorable_shows', -size=>12, -maxlength=>50),
+	featured => $q->textfield(-name=>'featured', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	last_update => $q->textfield(-name=>'last_update', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for genres
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	name => $q->textfield(-name=>'name', -size=>12, -maxlength=>50),
+	description => $q->textfield(-name=>'description', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for musician_band
+
+{
+	start_form => $q->start_form(),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	band => $q->textfield(-name=>'band', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for tracks
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	song => $q->textfield(-name=>'song', -size=>12, -maxlength=>50),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	instrument => $q->textfield(-name=>'instrument', -size=>12, -maxlength=>50),
+	filename => $q->textfield(-name=>'filename', -size=>12, -maxlength=>50),
+	comments => $q->textfield(-name=>'comments', -size=>12, -maxlength=>50),
+	public => $q->textfield(-name=>'public', -size=>12, -maxlength=>50),
+	num_plays => $q->textfield(-name=>'num_plays', -size=>12, -maxlength=>50),
+	is_audition => $q->textfield(-name=>'is_audition', -size=>12, -maxlength=>50),
+	post_date => $q->textfield(-name=>'post_date', -size=>12, -maxlength=>50),
+	order_by => $q->textfield(-name=>'order_by', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for track_internal_comments
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	track => $q->textfield(-name=>'track', -size=>12, -maxlength=>50),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	comment => $q->textfield(-name=>'comment', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for band_images
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	band => $q->textfield(-name=>'band', -size=>12, -maxlength=>50),
+	filename => $q->textfield(-name=>'filename', -size=>12, -maxlength=>50),
+	order_by => $q->textfield(-name=>'order_by', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for band_comments
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	band => $q->textfield(-name=>'band', -size=>12, -maxlength=>50),
+	comment => $q->textfield(-name=>'comment', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	registrant => $q->textfield(-name=>'registrant', -size=>12, -maxlength=>50),
+	rating => $q->textfield(-name=>'rating', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for band_internal_comments
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	band => $q->textfield(-name=>'band', -size=>12, -maxlength=>50),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	comment => $q->textfield(-name=>'comment', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for registrants
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	username => $q->textfield(-name=>'username', -size=>12, -maxlength=>50),
+	password => $q->textfield(-name=>'password', -size=>12, -maxlength=>50),
+	email => $q->textfield(-name=>'email', -size=>12, -maxlength=>50),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	last_update => $q->textfield(-name=>'last_update', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for musician_band_invitations
+
+{
+	start_form => $q->start_form(),
+	musician => $q->textfield(-name=>'musician', -size=>12, -maxlength=>50),
+	band => $q->textfield(-name=>'band', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for band_genres
+
+{
+	start_form => $q->start_form(),
+	band => $q->textfield(-name=>'band', -size=>12, -maxlength=>50),
+	genre => $q->textfield(-name=>'genre', -size=>12, -maxlength=>50),
+	order_by => $q->textfield(-name=>'order_by', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for songs
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	band => $q->textfield(-name=>'band', -size=>12, -maxlength=>50),
+	title => $q->textfield(-name=>'title', -size=>12, -maxlength=>50),
+	description => $q->textfield(-name=>'description', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
+# fields for song_comments
+
+{
+	start_form => $q->start_form(),
+	id => $q->textfield(-name=>'id', -size=>12, -maxlength=>50),
+	song => $q->textfield(-name=>'song', -size=>12, -maxlength=>50),
+	comment => $q->textfield(-name=>'comment', -size=>12, -maxlength=>50),
+	registrant => $q->textfield(-name=>'registrant', -size=>12, -maxlength=>50),
+	rating => $q->textfield(-name=>'rating', -size=>12, -maxlength=>50),
+	create_date => $q->textfield(-name=>'create_date', -size=>12, -maxlength=>50),
+	submit => $q->submit(),
+}
+
